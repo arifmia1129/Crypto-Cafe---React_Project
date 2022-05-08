@@ -5,13 +5,13 @@ const Footer = () => {
     return (
         <div>
             <div className='flex justify-center gap-20 py-10'>
-                <GrFacebookOption className='text-xl text-gray-400 hover:text-black' />
+                <GrFacebookOption className='text-xl text-gray-500 hover:text-black' />
                 <FiTwitter className='text-xl text-gray-400 hover:text-black' />
                 <FiGithub className='text-xl text-gray-400 hover:text-black' />
                 <FiLinkedin className='text-xl text-gray-400 hover:text-black' />
             </div>
-            <div>
-
+            <div className='flex justify-center pb-5'>
+                Crypto Cafe &copy; 2022.
             </div>
         </div>
     );
