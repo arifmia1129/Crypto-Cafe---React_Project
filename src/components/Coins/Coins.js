@@ -9,7 +9,7 @@ const Coins = () => {
             .then(data => setCoins(data));
     }, []);
     return (
-        <div className='px-[8%] md:px-40 py-8 bg-gray-100'>
+        <div className='px-[8%] md:px-40 py-8'>
             <h1 className='font-sans font-bold text-4xl text-center'>Available Crypto Currencies</h1>
             <p className='text-center py-3 text-xl text-gray-600'>Total Coins: {coins.length}</p>
             <div className='md:grid grid-cols-4 gap-4'>

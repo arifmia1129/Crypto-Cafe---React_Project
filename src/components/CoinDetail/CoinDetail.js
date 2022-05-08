@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 const CoinDetail = () => {
     const { id } = useParams();
     const [coin, setCoin] = useState({});
-    console.log(coin);
     useEffect(() => {
         fetch(`https://api.coingecko.com/api/v3/coins/${id}`)
             .then(res => res.json())
@@ -12,11 +11,11 @@ const CoinDetail = () => {
     }, [id]);
     const { image, name, market_cap_rank, country_origin, hashing_algorithm, genesis_date, last_updated, coingecko_score, community_score, developer_score, liquidity_score, public_interest_score } = coin;
     return (
-        <div className='bg-gray-100 md:px-80 py-10 px-[8%] md:flex'>
+        <div className='md:px-80 py-10 px-[8%] md:flex'>
             <div className='py-5 md:order-2 flex justify-center items-center md:px-40'>
                 <img src={image?.large} alt="" />
             </div>
-            <div className='md:order-1'>
+            <div className='md:order-1 font-sans'>
                 <div className='mb-20'>
                     <h3 className='text-3xl font-bold'>General Info</h3>
                     <div className='text-xl'>

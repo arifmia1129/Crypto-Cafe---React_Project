@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Homepage = () => {
     return (
-        <div className='bg-gray-200'>
+        <div>
             <div className='h-[80vh] flex flex-col justify-center items-center'>
                 <div className='text-center md:flex gap-4 mb-5'>
                     <h1 className='font-mono font-bold text-6xl'>Welcome to CRYPTO CAFE</h1>
