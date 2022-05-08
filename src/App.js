@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import About from './components/About/About';
 import BD from './components/Address/BD/BD';
 import US from './components/Address/US/US';
 import CoinDetail from './components/CoinDetail/CoinDetail';
@@ -21,6 +22,7 @@ function App() {
           <Route path='bdaddress' element={<BD />}></Route>
           <Route path='usaddress' element={<US />}></Route>
         </Route>
+        <Route path="/about" element={<About />}></Route>
       </Routes>
       <Footer></Footer>
     </div>
